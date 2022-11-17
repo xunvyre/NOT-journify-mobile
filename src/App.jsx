@@ -1,21 +1,13 @@
 import React from 'react';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import Journals from './components/Journals/Journals';
-import Login from './components/Login/Login';
-import Nav from './components/Nav/Nav';
-import Upload from './components/Upload/Upload';
+import Home from './pages/Home';
+import LoginPage from './pages/LoginPage';
+
 
 const App = () =>
 {
   return (
     <>
-        <Header/>
-        <Login/>
-        <Nav/>
-        <Journals/>
-        <Upload/>
-        <Footer/>
+      <Home/>
     </>
   )
 };

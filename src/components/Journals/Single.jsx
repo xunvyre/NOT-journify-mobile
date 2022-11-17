@@ -1,26 +1,22 @@
 import React from 'react';
-import placeholder from '../../assets/images/placeholder-image.jpg';
+//import placeholder from '../../assets/images/placeholder-image.jpg';
 import { dJournals } from '../../assets/dummyData';
 
 const Single = () =>
 {
-    console.log(window.location.pathname.split("/").pop());
+    const activeJournal = dJournals.find(journal => journal.id === 11);
+
   return (
     <section id="single-journal row">
-      <h2 class="journal-title">My Example Journal</h2>
+      <h2 class="journal-title">{activeJournal.title}</h2>
       <p class="journal-desc">
-          This is an example paragraph. I need to get this long enough to wrap.
-          The content of this paragraph will be dictated by user input from the create journal
-          screen.
+          {activeJournal.entry}
       </p>
 
       <div class="flex">
 
           <div class="single-img card bg-light">
-              <img class="card-img-top img-preview" src={placeholder} alt=""/>
-          </div>
-          <div class="single-img card bg-light">
-              <img class="card-img-top img-preview" src={placeholder} alt=""/>
+              <img class="card-img-top img-preview" src={activeJournal.img} alt=""/>
           </div>
 
           <div class="dropdown">
@@ -54,7 +50,7 @@ const Single = () =>
       <div class="journal-comment col-12">
           <p>
               This is an example comment!<br />
-              <span>09/13/2022 by Name Here</span>
+              <span>09/13/2022 by BoopSoop</span>
           </p>
       </div>
     </section>

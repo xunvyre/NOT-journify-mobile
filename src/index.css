@@ -79,7 +79,7 @@ nav
     position: fixed;
     left: 48%;
     transform: translateX(-50%);
-    top: 4.5rem;
+    top: 5rem;
     display: flex;
     gap: 2rem;
     border-radius: 3rem;
@@ -107,6 +107,7 @@ section
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    padding-top: 2rem;
 }
 
 .card
