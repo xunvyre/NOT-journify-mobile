@@ -1,13 +1,14 @@
 import React from 'react';
 import Home from './pages/Home';
 import LoginPage from './pages/LoginPage';
+import SingleView from './pages/Single';
 
 
 const App = () =>
 {
   return (
     <>
-      <Home/>
+      <SingleView/>
     </>
   )
 };

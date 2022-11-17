@@ -1,5 +1,4 @@
 import {React, useState} from 'react';
-import Single from './Single.jsx';
 import newJ from '../../assets/images/journify-new-journal.png';
 import placeholder from '../../assets/images/placeholder-image.jpg';
 import {dJournals} from '../../assets/dummyData';
@@ -51,7 +50,6 @@ const Journals = () =>
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <Single/>
         </section>
     )
 }
